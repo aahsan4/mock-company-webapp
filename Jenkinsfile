@@ -21,7 +21,7 @@ pipeline {
         failure {
             // Add a post-build step to handle failures
             script {
-                withCredentials([[$class: 'GitHubAppCredentials', credentialsId: 'your-credentials-id', owner: 'aahsan4', appid: 'your-app-id']]) {
+                withCredentials([[$class: 'GitHubAppCredentials', credentialsId: 'Aninda Ahsan', owner: 'aahsan4', appid: 'Papio Pipelines']]) {
                     // You can use the GitHub App Credentials here
                     echo "Failed: Check the build logs for details."
                 }
